@@ -1,0 +1,28 @@
+{
+  "name": "chronoring",
+  "version": "1.0.0",
+  "description": "Zero-copy lock-free ring buffer with 64-bit monotonic sequencing and sub-microsecond cross-thread dispatch",
+  "type": "module",
+  "main": "src/core.js",
+  "bin": {
+    "chronoring": "src/cli.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "start": "node src/cli.js",
+    "test": "node test/smoke.js",
+    "bench": "node test/bench.js"
+  },
+  "keywords": [
+    "lock-free",
+    "ring-buffer",
+    "atomics",
+    "sharedarraybuffer",
+    "low-latency",
+    "concurrency",
+    "systems"
+  ],
+  "license": "MIT"
+}
